@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/pokemon-type-helper/static/css/main.073c9b0a.css",
-    "main.js": "/pokemon-type-helper/static/js/main.f95353f1.js",
+    "main.css": "/pokemon-type-helper/static/css/main.18e4c307.css",
+    "main.js": "/pokemon-type-helper/static/js/main.e7abc65c.js",
     "static/js/787.bfd9a8db.chunk.js": "/pokemon-type-helper/static/js/787.bfd9a8db.chunk.js",
-    "static/media/logo.svg": "/pokemon-type-helper/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/pokemon-type-helper/index.html",
-    "main.073c9b0a.css.map": "/pokemon-type-helper/static/css/main.073c9b0a.css.map",
-    "main.f95353f1.js.map": "/pokemon-type-helper/static/js/main.f95353f1.js.map",
+    "main.18e4c307.css.map": "/pokemon-type-helper/static/css/main.18e4c307.css.map",
+    "main.e7abc65c.js.map": "/pokemon-type-helper/static/js/main.e7abc65c.js.map",
     "787.bfd9a8db.chunk.js.map": "/pokemon-type-helper/static/js/787.bfd9a8db.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f95353f1.js"
+    "static/css/main.18e4c307.css",
+    "static/js/main.e7abc65c.js"
   ]
 }
