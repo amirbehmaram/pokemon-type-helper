@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@mixin header1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+}
+
+@mixin content {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+}

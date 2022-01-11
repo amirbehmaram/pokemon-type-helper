@@ -1,0 +1,32 @@
+@use "./styles/variables.scss" as *;
+@use "./styles/typography.scss" as *;
+
+.site {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  position: relative;
+  background-color: $black;
+  overflow-x: hidden;
+
+  &__content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: {
+      left: 40px;
+      right: 40px;
+      top: 80px;
+      bottom: 80px;
+    }
+  }
+
+  .title {
+    @include header1;
+    color: $offWhite;
+  }
+
+  .content {
+    @include content;
+    color: $offWhite;
+  }
+}
