@@ -35,3 +35,8 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn deploy`
+
+Deploys the app up to Github pages. Runs the predeploy task first which just runs `yarn build` then takes the output of that
+and pushes it up to the gh-pages branch which houses the actual code for the app.
