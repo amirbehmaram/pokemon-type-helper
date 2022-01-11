@@ -1,0 +1,55 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/typography.scss' as *;
+
+.dropdown {
+  display: flex;
+  margin: {
+    bottom: 24px;
+    right: 24px;
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__select-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+  }
+  
+  &__label {
+    color: $offWhite;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  &__options {
+    @include dropdown;
+    background-color: $offWhite;
+    color: $black;
+    border: 1px solid $black;
+    padding: {
+      left: 16px;
+      right: 48px;
+      top: 8px;
+      bottom: 8px;
+    }
+    border-radius: 8px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg,gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) 1em, calc(100% - 15px) 1em, calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.25em;
+    background-repeat: no-repeat;
+  }
+}
