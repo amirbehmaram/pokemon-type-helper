@@ -1,21 +1,18 @@
-// Core imports
-import { useState } from "react";
+// React Imports
+import { useState, useContext } from "react";
 
-// Style imports
+// Style Imports
 import "./pokemon-types.scss";
 
-// Custom Component imports
+// Component Imports
 import Dropdown from "../dropdown/dropdown";
 
-function PokemonTypes() {
-  // To keep track of the secondary dropdown
-  const [showSecondary, setShowSecondary] = useState(false);
+// Context Imports
+import TypeContext from '../../context/types.context';
 
-  // showSecondaryDropdown will either be true or false
-  // is set in dropdown.js dropdownChange event
-  const primaryDropdownUpdate = (showSecondaryDropdown) => {
-    setShowSecondary(showSecondaryDropdown);
-  }
+function PokemonTypes() {
+  // Grab our sweet sweet context to handle some of the inner workings of the dropdowns.
+  const {getTypes, updateTypes} = useContext(TypeContext);
 
   return (
     <div className="pokemon-types">
@@ -23,12 +20,15 @@ function PokemonTypes() {
         label="Primary Type" 
         id="primary-type" 
         isShowing={ true } 
-        onDropdownUpdate={ primaryDropdownUpdate } 
+        dropdownType={'primary'}
+        disabledType={getTypes.secondary}
       />
       <Dropdown 
         label="Secondary Type" 
         id="secondary-type" 
-        isShowing={ showSecondary } 
+        isShowing={ getTypes.primary !== '' ? true : false }
+        dropdownType={'secondary'}
+        disabledType={getTypes.primary}
       />
     </div>
   );

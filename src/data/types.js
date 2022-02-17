@@ -19,6 +19,6 @@ const Types = [
   'Rock',
   'Steel',
   'Water'
-]
+];
 
 export default Types;

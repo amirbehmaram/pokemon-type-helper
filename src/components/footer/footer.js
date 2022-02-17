@@ -1,4 +1,11 @@
+// React Imports
+
+// Style Imports
 import "./footer.scss";
+
+// Component Imports
+
+// Context Imports
 
 function Footer() {
   return (
