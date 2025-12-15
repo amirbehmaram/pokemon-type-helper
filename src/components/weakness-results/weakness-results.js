@@ -155,8 +155,6 @@ function WeaknessResults(props) {
     console.log(finalQuadDamage);
   };
 
-  
-
   setupWeaknesses();
 
   return (

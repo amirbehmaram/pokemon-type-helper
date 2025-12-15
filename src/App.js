@@ -6,7 +6,8 @@ import './App.scss';
 
 // Component Imports
 import PokemonTypes from './components/pokemon-types/pokemon-types';
-import WeaknessResults from './components/weakness-results/weakness-results';
+//import WeaknessResults from './components/weakness-results/weakness-results';
+import { Weakness } from './components/weakness/weakness';
 import Footer from "./components/footer/footer";
 
 // Context Imports
@@ -35,7 +36,7 @@ function App() {
           }}
         >
           <PokemonTypes />
-          <WeaknessResults />
+          <Weakness />
         </TypeContext.Provider>
       </div>
       <Footer />
